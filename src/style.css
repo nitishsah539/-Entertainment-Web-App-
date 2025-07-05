@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #10141e;
+  color: white;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: #161d2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.sidebar i {
+  font-size: 24px;
+  color: white;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.search-bar input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background-color: #1e293b;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card p {
+  margin: 0.5rem;
+  font-size: 14px;
+}
